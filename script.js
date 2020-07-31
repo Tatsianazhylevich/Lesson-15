@@ -122,3 +122,29 @@ console.log(arrayofNumber);
 console.log(arrayOfString);
 console.log(arrayOfBoolean);
 
+// ==================================TASK 5=============================
+
+let family = {
+    amount: 5,
+    familyMembers: [
+        {name: 'Borya', age: 15},
+        {name: 'Tolya', age: 54},
+        {name: 'Anjela', age: 45},
+        {name: 'Snejana', age: 14},
+        {name: 'Gavriil', age: 24},
+],
+    getoldestFamilyMember() {
+        let oldestMember;
+        let oldestMemberAge = 0;
+        for(member of this.familyMembers) {
+            if(oldestMemberAge < member.age) {
+                oldestMemberAge = member.age;
+                oldestMember = member;
+            }
+        }
+        this.oldestMember = oldestMember;
+    }
+}
+
+family.getoldestFamilyMember();
+console.log(family);
