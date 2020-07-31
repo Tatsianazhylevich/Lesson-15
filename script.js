@@ -10,7 +10,7 @@ function addInArray(number, index) {
 
     let increaseNumber = confirm('Press "Yes" to increase the numbers, "No" - to decrease');
     array = array.map(function(item) {
-       if (true) {
+       if (increaseNumber) {
            return item * index;
        } else {
         return item / index;
