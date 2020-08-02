@@ -143,8 +143,9 @@ let family = {
             }
         }
         this.oldestMember = oldestMember;
+        return oldestMember;
     }
 }
-
-family.getoldestFamilyMember();
+let older = family.getoldestFamilyMember();
+console.log(older);
 console.log(family);
